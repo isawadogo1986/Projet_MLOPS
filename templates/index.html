@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Default Prediction</title>
+</head>
+<body>
+    <div style="color:blue">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Prédiction Défaut de Crédit</h2>
+            <h3>Nombre de lignes de crédit ouvertes</h3>
+            <input id="first" name="credit_lines_outstanding" type="number" required="required">
+
+            <h3>Montant du prêt restant</h3>
+            <input id="second" name="loan_amt_outstanding" type="number" required="required">
+
+            <h3>Dette totale restante</h3>
+            <input id="third" name="total_debt_outstanding" type="number" required="required">
+
+            <h3>Revenu annuel</h3>
+            <input id="fourth" name="income" type="number" required="required">
+
+            <h3>Années d'emploi</h3>
+            <input id="fifth" name="years_employed" type="number" required="required">
+
+            <h3>FICO Score</h3>
+            <input id="sixth" name="fico_score" type="number" required="required">
+
+            <br><br><button id="sub" type="submit">Prédire</button>
+            <br>
+        </form>
+        <br><br><h3>{{ prediction_text }}</h3>
+    </div>
+    <style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 0px;
+        }
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        #sub:hover { background-color: darkcyan; }
+        #first, #second, #third, #fourth, #fifth, #sixth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>

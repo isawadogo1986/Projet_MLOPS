@@ -7,14 +7,17 @@ app = Flask(__name__)
 # !! Change ici le nom du fichier modèle :
 model = pickle.load(open("logreg_model.pkl", "rb"))
 
+
 def model_pred(features):
     test_data = pd.DataFrame([features])
     prediction = model.predict(test_data)
     return int(prediction[0])
 
+
 @app.route("/", methods=["GET"])
 def Home():
     return render_template("index.html")
+
 
 @app.route("/predict", methods=["POST"])
 def predict():
@@ -33,7 +36,7 @@ def predict():
             "total_debt_outstanding": total_debt_outstanding,
             "income": income,
             "years_employed": years_employed,
-            "fico_score": fico_score
+            "fico_score": fico_score,
         }
 
         # Prédiction avec le modèle
@@ -42,15 +45,15 @@ def predict():
         if prediction == 1:
             return render_template(
                 "index.html",
-                prediction_text="Attention : risque de défaut de crédit prédit."
+                prediction_text="Attention : risque de défaut de crédit prédit.",
             )
         else:
             return render_template(
-                "index.html",
-                prediction_text="Pas de risque de défaut prédit."
+                "index.html", prediction_text="Pas de risque de défaut prédit."
             )
     else:
         return render_template("index.html")
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
