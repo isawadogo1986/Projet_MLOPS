@@ -7,7 +7,7 @@ env:
   REPO_NAME: ${{secrets.REPO_NAME}}
 
 # Event Triggers:
-# The pipeline is triggered whenever there is a push to the main branch
+# The pipeline is triggered whenever there is a push to the main branch.
 # It is also triggered whenever there is a pull request to the main branch.
 
 on:

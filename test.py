@@ -3,11 +3,11 @@ from app import model_pred
 # Nouveau dictionnaire avec les bonnes variables explicatives
 new_data = {
     'credit_lines_outstanding': 4,
-    'loan_amt_outstanding': 10000,
-    'total_debt_outstanding': 20000,
-    'income': 42000,
-    'years_employed': 7,
-    'fico_score': 680
+    'loan_amt_outstanding': 3302.172238,
+    'total_debt_outstanding': 813067.57021,
+    'income': 50352.16821,
+    'years_employed': 3,
+    'fico_score': 545
 }
 
 def test_predict():
