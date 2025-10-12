@@ -1,0 +1,10 @@
+artifact_location: mlflow-artifacts:/876832469169906264/models/m-e8c17d38803640f4911316a8209f6ba5/artifacts
+creation_timestamp: 1760277983699
+experiment_id: '876832469169906264'
+last_updated_timestamp: 1760277986429
+model_id: m-e8c17d38803640f4911316a8209f6ba5
+model_type: ''
+name: logreg_credit1
+source_run_id: d83acf4e30434c0086d84acab8744df5
+status: 2
+status_message: null

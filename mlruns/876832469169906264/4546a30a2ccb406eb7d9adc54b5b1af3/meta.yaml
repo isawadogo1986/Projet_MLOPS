@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/876832469169906264/4546a30a2ccb406eb7d9adc54b5b1af3/artifacts
+end_time: 1760278023553
+entry_point_name: ''
+experiment_id: '876832469169906264'
+lifecycle_stage: active
+run_id: 4546a30a2ccb406eb7d9adc54b5b1af3
+run_name: credit_catboost_test1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760278019874
+status: 3
+tags: []
+user_id: HP

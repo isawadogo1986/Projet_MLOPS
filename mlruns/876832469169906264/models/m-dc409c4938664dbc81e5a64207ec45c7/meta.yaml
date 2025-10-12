@@ -1,0 +1,10 @@
+artifact_location: mlflow-artifacts:/876832469169906264/models/m-dc409c4938664dbc81e5a64207ec45c7/artifacts
+creation_timestamp: 1760277941978
+experiment_id: '876832469169906264'
+last_updated_timestamp: 1760277948077
+model_id: m-dc409c4938664dbc81e5a64207ec45c7
+model_type: ''
+name: rf_credit1
+source_run_id: 700ed4e887f14509a6b728463d729147
+status: 2
+status_message: null

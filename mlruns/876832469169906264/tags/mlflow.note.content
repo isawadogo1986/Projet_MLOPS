@@ -1,0 +1,1 @@
+Projet de prédiction de défauts de paiements pour prêts personnels en banque de détail. Le but est de construire un modèle qui estime la probabilité de défaut pour chaque client, afin d'aider la banque à anticiper les pertes et maintenir la stabilité financière.
